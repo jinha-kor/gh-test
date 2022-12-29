@@ -2,7 +2,7 @@
   "name": "harucode",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://jinha0311.github.io/haruCode",
+  "homepage": "https://jinha0311.github.io",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
