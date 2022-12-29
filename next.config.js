@@ -1,10 +1,10 @@
 /** @type {import('next').NextConfig} */
 const isProd = process.env.NODE_ENV === "production";
-const repository = "https://jinha-kor.github.io";
+const repository = "jinha-kor.github.io";
 
 const nextConfig = {
   reactStrictMode: true,
-  assetPrefix: isProd ? `${repository}` : ``,
+  assetPrefix: isProd ? `/${repository}/` : ``,
   trailingSlash: true,
   images: {
     loader: "imgix",
