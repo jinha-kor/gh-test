@@ -17,11 +17,11 @@ const Header = () => {
     return (
         <header className="flex flex-col sm:flex-row m-5 justify-between items-center">
             <div className="flex cursor-pointer transform hover:scale-105">
-                <HeaderItem id="main" flag="main" title='TEST' Icon={Icons.CodeBracketIcon} onClick={iconClickHandler} />
+                <HeaderItem id="main" flag="main" title='TEST' Icon={Icons.HomeIcon} onClick={iconClickHandler} />
             </div>
             <div className="flex flex-grow justify-evenly max-w-sm">
-                <HeaderItem id="cube" flag="sub" title='CUBE' Icon={Icons.CubeIcon} onClick={iconClickHandler} />
-                <HeaderItem id="account" flag="sub" title='ACCOUNT' Icon={Icons.UserIcon} onClick={iconClickHandler} />
+                <HeaderItem id="about" flag="sub" title='ABOUT' Icon={Icons.UserIcon} onClick={iconClickHandler} />
+                <HeaderItem id="skill" flag="sub" title='SKILL' Icon={Icons.CodeBracketIcon} onClick={iconClickHandler} />
             </div>
         </header>
     )
