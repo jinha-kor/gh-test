@@ -1,6 +1,5 @@
-import '../styles/globals.css'
-import type { AppProps } from 'next/app'
-import Header from "../src/layout/Header";
+import '../styles/globals.css';
+import type { AppProps } from 'next/app';
 import moment from 'moment';
 
 moment.locale('ko');
@@ -8,7 +7,6 @@ moment.locale('ko');
 const App = ({ Component, pageProps }: AppProps) => {
     return (
         <>
-            <Header/>
             <Component {...pageProps} />
         </>
     )

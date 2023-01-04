@@ -8,7 +8,14 @@ module.exports = {
   assetPrefix: isProd ? `${repository}/` : '',
   trailingSlash: true,
   images: {
-    loader: 'akamai',
-    path: `.`,
+    unoptimized: true,
+    remotePatterns: [
+      {
+        protocol: isProd ? 'https' : 'http',
+        hostname: isProd ? 'jinha-kor.github.io' : 'src/images',
+        port: isProd ? '' : '3000',
+        pathname: isProd ? '/images/**' : '/src/images/**',
+      },
+    ]
   }
 };

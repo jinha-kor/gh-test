@@ -4,10 +4,28 @@
 
 @layer base {
   body {
-    @apply bg-[#06202A] text-gray-300
+    @apply bg-[#ffffff] text-black
   }
 }
 
-.headerSpan {
+header {
+  position: sticky;
+  top: -32px;
+  background: brown;
+  padding: 45px 32px 10px;
+}
+
+.box {
+  background: #BDBDBD;
+  width: 70px;
+  height: 70px;
+  border-radius: 70%;
+  overflow: hidden;
   display: flex;
+}
+
+.box.profile {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
