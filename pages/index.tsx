@@ -24,10 +24,12 @@ const Home = () => {
             <Header position={navNumber} />
 
             {/* Pages */}
-            <About isRef={aboutRef} />
-            <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
-            <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
-            <Skill isRef={skillRef} />
+            <div className={'pageContent'}>
+                <About isRef={aboutRef} position={navNumber} />
+            </div>
+            <div className={'pageContent'}>
+                <Skill isRef={skillRef} position={navNumber} />
+            </div>
         </div>
     )
 }

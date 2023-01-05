@@ -25,12 +25,19 @@ const HeaderItem: React.FC<Props> = (props) => {
                     </div>
                     <p id={props.id} className="text-7xl font-extrabold" >{props.title}</p>
                 </div>
-            ) : (
+            ) : null}
+            {props.flag === 'sub' ? (
                 <div id={props.id} className={`flex flex-col items-center cursor-pointer group w-12 sm:w-20 ${props.itemOn ? 'text-white' : 'hover:text-white'}`} onClick={itemClickHandler} >
                     <props.Icon id={props.id} className={`h-8 mb-1 ${props.itemOn ? 'animate-bounce' : 'group-hover:animate-bounce'}`}/>
                     <p id={props.id} className={`opacity-0 ${props.itemOn ? 'opacity-100' : 'group-hover:opacity-100'} tracking-widest`}>{props.title}</p>
                 </div>
-            )}
+            ) : null}
+            {props.flag === 'sectionTitle' ? (
+                <div id={props.id} className={`flex sectionTitle`} >
+                    <props.Icon id={props.id} className={`h-14 ${props.itemOn ? 'animate-bounce' : 'group-hover:animate-bounce'}`}/>
+                    <p id={props.id} className="text-5xl font-extrabold sectionTitle" >{props.title}</p>
+                </div>
+            ) : null}
         </>
     )
 };
