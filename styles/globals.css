@@ -3,57 +3,57 @@
 @tailwind utilities;
 
 @layer base {
-  body {
-    @apply bg-[#ffffff] text-black
-  }
+    body {
+        @apply bg-[#ffffff] text-black
+    }
 }
 
 header {
-  position: sticky;
-  top: -32px;
-  background: brown;
-  padding: 45px 32px 10px;
-  z-index: 9999;
+    position: sticky;
+    top: -32px;
+    background: brown;
+    padding: 45px 32px 10px;
+    z-index: 9999;
 }
 
 .box {
-  background: #BDBDBD;
-  width: 70px;
-  height: 70px;
-  border-radius: 70%;
-  overflow: hidden;
-  display: flex;
+    background: #BDBDBD;
+    width: 70px;
+    height: 70px;
+    border-radius: 70%;
+    overflow: hidden;
+    display: flex;
 }
 
 .box.profile {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .imgBox {
-  position: relative;
-  width: 100%;
-  height: 550px;
+    position: relative;
+    width: 100%;
+    height: 550px;
 }
 
 .pageContent {
-  margin: 25px 0px 25px 0px;
-  min-height: 900px;
+    margin: 25px 0px 25px 0px;
+    min-height: 900px;
 }
 
 .pageLayout {
-  padding-left: 10px;
-  padding-right: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .pageLayout div.sectionTitle {
-  justify-content: center;
-  margin-bottom: 10px;
+    justify-content: center;
+    margin-bottom: 10px;
 }
 
 .pageLayout p.sectionTitle {
-  border-bottom-width: 5px;
-  border-bottom-style: solid;
-  border-bottom-color: gray;
+    border-bottom-width: 5px;
+    border-bottom-style: solid;
+    border-bottom-color: gray;
 }

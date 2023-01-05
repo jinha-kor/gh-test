@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import HeaderItem from '../src/components/HeaderItem';
-import * as Icons from '@heroicons/react/24/outline';
+import * as Icons from '@heroicons/react/24/solid';
 
 const Skill: React.FC<Props> = (props) => {
     const defaultProps: Props = {
@@ -15,8 +15,8 @@ const Skill: React.FC<Props> = (props) => {
                 id={'skillPage'}
                 flag="sectionTitle"
                 title={'기술스택'}
-                Icon={Icons.LinkIcon}
-                itemOn={props.position === 1}
+                Icon={Icons.WrenchIcon}
+                itemOn={false}
             />
             <div className={'imgBox'}>
                 <Image src="/images/MOKOKO_2022_09.png" fill alt={'mokoko'} />

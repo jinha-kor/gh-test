@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import HeaderItem from '../src/components/HeaderItem';
-import * as Icons from '@heroicons/react/24/outline';
+import * as Icons from '@heroicons/react/24/solid';
 
 const About: React.FC<Props> = (props) => {
     const defaultProps: Props = {
@@ -15,8 +15,8 @@ const About: React.FC<Props> = (props) => {
                 id={'aboutPage'}
                 flag="sectionTitle"
                 title={'ABOUT ME'}
-                Icon={Icons.LinkIcon}
-                itemOn={props.position === 0}
+                Icon={Icons.IdentificationIcon}
+                itemOn={false}
             />
             <div className={'imgBox'}>
                 <Image src="/images/MOKOKO_2022_01.png" fill alt={'mokoko'} />
