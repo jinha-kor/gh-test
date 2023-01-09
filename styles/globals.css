@@ -9,11 +9,30 @@
 }
 
 header {
-    position: sticky;
-    top: -32px;
-    background: brown;
-    padding: 45px 32px 10px;
-    z-index: 9999;
+    display: block;
+}
+
+.headerLayout {
+    position: fixed;
+    width: 100%;
+    height: 110px;
+    top: 0;
+    background: transparent;
+    padding: 0 32px 10px;
+    color: white;
+    z-index: 10;
+}
+
+.headerColor {
+    background: white;
+    color: black;
+}
+
+.headerContent {
+    width: 100%;
+    max-width: 76.25rem;
+    padding: 1.25rem 2rem;
+    margin: 0 auto;
 }
 
 .box {
@@ -25,7 +44,7 @@ header {
     display: flex;
 }
 
-.box.profile {
+.box .profile {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -35,6 +54,12 @@ header {
     position: relative;
     width: 100%;
     height: 550px;
+}
+
+.mainTopContent {
+    position: relative;
+    min-height: 550px;
+    max-height: 600px;
 }
 
 .pageContent {
@@ -53,7 +78,22 @@ header {
 }
 
 .pageLayout p.sectionTitle {
+    margin-left: 15px;
     border-bottom-width: 5px;
     border-bottom-style: solid;
     border-bottom-color: gray;
+}
+
+.pageLayout .imageContent {
+    position: relative;
+    width: 100%;
+    height: 900px;
+    text-align: -webkit-center;
+    padding: 30px 100px 30px 100px;
+}
+
+.pageLayout .imageContent .skillImg {
+    position: relative;
+    width: 100%;
+    height: 750px;
 }
