@@ -1,6 +1,5 @@
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import Image from 'next/image';
 
 import { Observer } from '../src/components/Observer';
 import { RootState } from '../src/store/modules';
@@ -20,11 +19,16 @@ const Main = () => {
     return (
         <>
             <div className={'mainTopContent'}>
-                <Image
-                    src="/images/coding-or-hacker-background-vector.jpg"
-                    fill
-                    alt={'mokoko'}
-                />
+                <div className={'textArea'}>
+                    <span>
+                        <h2>포트폴리오 테스트 페이지</h2>
+                        <br />
+                        <p>포트폴리오 테스트 페이지</p>
+                        <p>포트폴리오 테스트 페이지</p>
+                        <p>포트폴리오 테스트 페이지</p>
+                        <p>포트폴리오 테스트 페이지</p>
+                    </span>
+                </div>
             </div>
 
             {/* Pages */}

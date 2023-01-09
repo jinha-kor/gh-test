@@ -35,6 +35,38 @@ header {
     margin: 0 auto;
 }
 
+.mainTopContent {
+    background: url("../public/images/coding-or-hacker-background-vector.jpg") center;
+    background-size: cover;
+    position: relative;
+    min-height: 600px;
+    max-height: 600px;
+}
+
+.mainTopContent .textArea {
+    max-width: 80.25rem;
+    margin: 0 auto;
+    padding: calc(4rem + 4.5rem) 7.5rem;
+    height: 600px;
+    vertical-align: center;
+}
+
+.mainTopContent .textArea span {
+    position: absolute;
+    transform: translate(0%, 0%);
+}
+
+.mainTopContent .textArea span h2 {
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.mainTopContent .textArea span p {
+    color: white;
+    font-size: 2.3rem;
+}
+
 .box {
     background: #BDBDBD;
     width: 70px;
@@ -54,12 +86,6 @@ header {
     position: relative;
     width: 100%;
     height: 550px;
-}
-
-.mainTopContent {
-    position: relative;
-    min-height: 550px;
-    max-height: 600px;
 }
 
 .pageContent {
