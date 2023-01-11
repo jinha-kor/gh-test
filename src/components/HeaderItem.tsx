@@ -88,6 +88,12 @@ const HeaderItem: React.FC<Props> = (props) => {
                     </p>
                 </div>
             ) : null}
+            {props.flag === 'onlyIcon' ? (
+                <props.Icon
+                    id={props.id}
+                    className={`h-14 group-hover:animate-bounce`}
+                />
+            ) : null}
         </>
     );
 };
@@ -95,7 +101,7 @@ const HeaderItem: React.FC<Props> = (props) => {
 export interface Props {
     id?: string;
     Icon: any;
-    title: string;
+    title?: string;
     flag?: string;
     onClick?: Function;
     itemOn?: boolean;

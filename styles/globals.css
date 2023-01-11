@@ -168,3 +168,17 @@ header {
     margin: 0 16px 0 16px;
 
 }
+
+.about-context {
+    display: flex;
+    /*width: 207px;*/
+    /*height: 43px;*/
+    font-size: 36px;
+    text-align: center
+}
+
+.about-context span {
+    display: flex;
+    /*margin: 35px 55px 35px 55px;*/
+    margin: calc(2.5rem) 3.5rem;
+}
