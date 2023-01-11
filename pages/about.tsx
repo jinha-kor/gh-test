@@ -19,6 +19,10 @@ const About: React.FC<Props> = (props) => {
                     Icon={Icons.IdentificationIcon}
                     itemOn={false}
                 />
+                <hr />
+                <p className={'subTitle'}>
+                    현재까지 배우고 사용 해봤던 기술목록 입니다.
+                </p>
                 <div className={'imgBox'}>
                     <Image
                         src="/images/MOKOKO_2022_01.png"

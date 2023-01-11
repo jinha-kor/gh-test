@@ -1,21 +1,20 @@
 import type { AppProps } from 'next/app';
-import moment from 'moment';
 import React from 'react';
-import { wrapper } from '../src/store';
-import '../styles/globals.css';
-import { createStore } from 'redux';
-import rootReducer from '../src/store/modules';
+import moment from 'moment';
 import { Provider } from 'react-redux';
+
+import wrapper from '../src/store/index';
+import '../styles/globals.css';
 
 moment.locale('ko');
 
-const store = createStore(rootReducer);
-const App = ({ Component, pageProps }: AppProps) => {
+const App = ({ Component, ...rest }: AppProps) => {
+    const { store, props } = wrapper.useWrappedStore(rest);
     return (
         <Provider store={store}>
-            <Component {...pageProps} />;
+            <Component {...props.pageProps} />;
         </Provider>
     );
 };
 
-export default wrapper.withRedux(App);
+export default App;

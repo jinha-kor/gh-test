@@ -32,12 +32,8 @@ const Main = () => {
             </div>
 
             {/* Pages */}
-            <div className={'pageContent'}>
-                <About isRef={aboutRef} position={navNumber} />
-            </div>
-            <div className={'pageContent'}>
-                <Skill isRef={skillRef} position={navNumber} />
-            </div>
+            <About isRef={aboutRef} position={navNumber} />
+            <Skill isRef={skillRef} position={navNumber} />
         </>
     );
 };
